@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Hand for a Paw</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./app.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Save the Stray</h1>
+            <ul>
+                <li><a data-page="home" href="#home">Home</a></li>
+                <li><a data-page="abt-prob" href="./prob.html">Problem</a></li>
+                <li><a data-page="abt-sol" href="./solution.html">Solution</a></li>
+                <li><a data-page="adopt" target="blank" href="./cat.html">Adopt!</a></li>
+                <div class="random"></div>
+            </ul>
+        </nav>
+    </header>
+<section id="bg">
+    <svg viewBox="0 0 960 300">
+        <symbol id="s-text">
+            <text text-anchor="middle" x="50%" y="80%">A Hand For A Paw!</text>
+        </symbol>
+    
+        <g class = "g-ants">
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+        </g>
+    </svg>
+</section>
+    <main>
+        <section class="home" id="home">
+            <img src="https://www.cheatsheet.com/wp-content/uploads/2017/06/Dog-looking-from-the-top-of-a-tree.jpg" id="dog-img" alt="" width="500px" height="300px">
+            <div class="dog">
+            <h3>The dog which saved a girl's life</h3>
+            <p>This dog 'Sako' saved his owner from coyotes after a car crash...This teenager had fallen after the car chrashed and broken her knee.<br>
+                The dog helped her stay warm for 3 days and helped her get water from the nearby stream.<br>
+                This girl survived only and only because of Sako</p>
+            </div>
+            <img src="https://www.cheatsheet.com/wp-content/uploads/2017/06/Gray-cat-lying-in-the-box.jpg" id="cat-img" alt="" width="500px" height="300px"> <br> <br> <br> <br> <br> <br> <br>
+        </section>
+        <div class="para">
+            <div class="cat">
+                <h2>Another story...</h2>
+                 <h3>Tabby cat saved the life of this baby</h3>
+                 <p>This tabby climbed into an abandoned baby’s box. Keeping the child warm,<br>
+                    Masha(The tabby cat) meowed until she got the attention of a passerby, who rushed the baby to a hospital. </p>
+                    <h3 id="cat" onclick="cat()"><a href="https://www.cheatsheet.com/culture/heroic-pets-saved-peoples-lives.html/" target="blank">Want more stories like this click here!</a></h3>
+             </div>
+            </div>
+    </main>
+    <div id="block">
+        <h2>Wanna know my favourite animals? Click this button<h3 id="list1"></h3></h2>
+        <input type="button" value="Favourite Animals" id="bats">
+    </div>
+    <footer class="flex space-between">
+        <div>
+            <h2 class="asdf">Brought to you by ProGrad Junior</h2>
+        </div>
+        <div class="flex" id="details">
+            <h3>Anagha N</h3>
+            <p>ProGrad Junior</p>
+            <p>Grade 7, Freedom International school</p>
+            <p>Talk to me <br> @anagha.neel@gmail.com</p>
+           
+        </div>
+    </footer>
+
+</body>
+<style>
+    h3{
+        align-items: center;
+        text-align: center;
+    }
+    .para{
+        padding: 20px;
+        margin-left: 400px;
+        margin-right: 400px;
+    }
+    
+footer{
+	margin-top: 40px;
+}
+</style>
+</html>

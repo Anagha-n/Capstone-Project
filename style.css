@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Indie Flower', cursive;
+}
+header{
+    box-shadow: 0px 3px 10px rgba(0, 0, 0,0.3);
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+nav{
+    min-height: 10vh;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav h1, nav ul{
+font-size: 1.5em;
+flex: 1;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section h2{
+    font-size: 3rem;
+}
+#bg{
+   background-repeat: no-repeat;
+   background-size: cover;
+    background-image: url('https://www.fourpaws.com/-/media/Images/FourPaws-NA/US/articles/dogs-and-cats-happy-dog-happy-cat.jpg');
+}
+/* .abt-prob{
+    background: linear-gradient(to right top,#BA8B02,#181818);
+} */
+
+/* .random{
+    position: absolute;
+    z-index: -2;
+    background:linear-gradient(to right top,#43cea2,#185a9d);
+    transform: scale(2);
+} */
+
+nav a::after{
+    content: "";
+    border-bottom: blue;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+}
+
+nav li{
+    overflow: hidden;
+}
+
+svg {
+    font: 6em 'Montserrat';
+    position: absolute;
+}
+
+.text-copy {
+    fill: none; 
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #0101bb;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: rgb(59, 3, 110);
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke:#0083da;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #0101bb;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke:  rgb(59, 3, 110);
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+.button {
+    background-color: #8E54E9;
+    padding: 10px;
+    width: 200px;
+    margin: auto;
+    cursor: pointer;
+    color:#93F9B9;
+  }
+#good{
+      display: none;
+  }
+  h4 {
+    display: none;
+    padding: 10px;
+    width: 200px;
+    background-color:#8E54E9 ;
+    text-align: center;
+    color:#93F9B9;
+  }
+  #cat-img{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 50px;
+  }
+  #dog-img{
+    display:flex ;
+     float: right;
+    padding: 50px;
+  } 
+  p{
+      font-size: 23px;
+      text-align: center;
+      margin: auto;
+  }
+  h2{
+      text-align: center;
+      padding: 20px;
+      font-size: 40px;
+  }
+
+footer img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+footer{
+    height: 300px;
+    background-image: url('http://i1.faceprep.in/prograd-junior/footer-bg.png');
+    background-size: 100% 100%;
+    color: white;
+    padding: 0% 5%;
+}
+#details{
+    flex-direction: column;
+    text-align: right;
+}
+#abt-prob{
+    background: linear-gradient(cyan,lime);
+}
+.problm{
+    background: linear-gradient(cyan,lime);
+}
+.para{
+    background-color: royalblue;
+    padding: 10px;
+    text-align: center;
+}
+.bcs{
+    align-items: center;
+    text-align: center;
+}
+#cimage{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.link{
+    text-align: center;
+    align-items: center;
+}
+#bats{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: cornflowerblue;
+    text-align: center;
+    cursor: pointer;
+}
